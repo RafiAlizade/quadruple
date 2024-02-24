@@ -1,0 +1,217 @@
+@media (max-width: 1536px) {
+    .member__container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1435px) {
+    .member__container {
+        width: 78%;
+    }
+}
+
+@media (max-width: 1276px) {
+    .member__container {
+        width: 84%;
+    }
+}
+
+@media (max-width: 1202px) {
+    .member__container {
+        width: 84%;
+    }
+
+    .member__photo {
+        width: 20%;
+    }
+}
+
+@media (max-width: 1070px) {
+    .member__container {
+        width: 94%;
+    }
+
+    .member__photo {
+        width: 20%;
+    }
+}
+
+@media (max-width: 981px) {
+    .member__container {
+        width: 100%;
+    }
+
+    .member__photo {
+        width: 20%;
+    }
+}
+
+@media (max-width: 897px) {
+    .member__container {
+        width: 100%;
+    }
+
+    .member__photo {
+        width: 23%;
+    }
+}
+
+@media (max-width: 876px) {
+    .member__container {
+        width: 100%;
+    }
+
+    .member__photo {
+        width: 26%;
+    }
+
+    .member__box {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .member__container_right {
+        align-items: center;
+    }
+
+    .container__right_p {
+        text-align: center;
+    }
+
+    .member__container_right {
+        gap: 2rem;
+    }
+
+    .team__members {
+        gap: 4rem;
+    }
+
+    .member__job {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 784px) {
+    .member__container_left  {
+        width: 54%;
+    }
+}
+
+@media (max-width: 694px) {
+    .member__container_left  {
+        width: 68%;
+    }
+
+    .member__container_right  {
+        width: 64%;
+    }
+}
+
+@media (max-width: 623px) {
+    .member__container_left  {
+        width: 74%;
+    }
+}
+
+@media (max-width: 567px) {
+
+    .member__container_left  {
+        width: 80%;
+    }
+}
+
+@media (max-width: 517px) {
+
+    .member__container_left  {
+        width: 90%;
+    }
+
+    .member__job {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 436px) {
+
+    .member__photo {
+        width: 32%;
+        height: 6rem;
+    }
+
+    .member__container_left  {
+        width: 95%;
+    }
+
+    .container__right_h3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .member__photo {
+        width: 37%;
+        height: 6rem;
+    }
+}
+
+@media (max-width: 306px) {
+
+    .member__photo {
+        width: 44%;
+        height: 6rem;
+    }
+}
+
+@media (max-width: 268px) {
+
+    .member__photo {
+        width: 50%;
+        height: 6rem;
+    }
+
+    .container__right_h3 {
+        font-size: 1.65rem;
+    }
+}
+
+
+// ! Nav and more 
+
+@media (max-width: 744px) {
+    .hero__inner {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .hero__left_h2 {
+        text-align: center;
+        width: 90%;
+    }
+
+    .hero__left_desc {
+        text-align: center;
+    }
+
+    .hero__left {
+        width: 100%;
+        align-items: center;
+    }
+
+    .hero__right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header__links {
+        display: none;
+    }
+
+    .bi-list {
+        display: inline-block;
+    }
+}
+
+

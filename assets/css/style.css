@@ -663,7 +663,10 @@ body {
     width: 95%;
   }
   .container__right_h3 {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
+  }
+  .hero__left_h2 {
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 360px) {
@@ -685,6 +688,21 @@ body {
   }
   .container__right_h3 {
     font-size: 1.65rem;
+  }
+  .member__name {
+    font-size: 1.3rem;
+  }
+  .member__job {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+@media (max-width: 233px) {
+  .container__right_h3 {
+    font-size: 1.25rem;
+  }
+  .hero__left_h2 {
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 744px) {
@@ -713,5 +731,10 @@ body {
   }
   .bi-list {
     display: inline-block;
+  }
+}
+@media (max-width: 360px) {
+  .hero__left_btn {
+    width: 68%;
   }
 }/*# sourceMappingURL=style.css.map */

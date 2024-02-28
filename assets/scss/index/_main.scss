@@ -287,9 +287,18 @@
     color: #cccccc;
 }
 
+.member__pos {
+    display: inline-block;
+    margin-top: 0.65rem;
+    font-size: 1rem;
+    font-family: 'Clash Display', sans-serif;
+    color: #cccccc;
+}
+
 .member__line {
     margin-top: 0.45rem;
     // background-color: #402b9c;
+    padding-bottom: 0.2rem;
     width: 50%;
     height: 0.14rem;
 }

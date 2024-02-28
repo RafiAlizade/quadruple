@@ -246,3 +246,30 @@
     }
 }
 
+@media (max-width: 556px) {
+    .header__mobile {
+        width: 70%;
+    }
+}
+
+@media (max-width: 377px) {
+    .mobile__list > li a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 283px) {
+    .header__mobile {
+        width: 100%;
+    }
+
+    .mobile__list > li a {
+        font-size: 1.2rem;
+    }
+}
+
+// @media (max-width: 180px) {
+//     .mobile__list > li a {
+//         font-size: 1rem;
+//     }
+// }

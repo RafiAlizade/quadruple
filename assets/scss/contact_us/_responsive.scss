@@ -1,0 +1,104 @@
+@media (max-width: 1200px) {
+    .contact_line {
+        width: 55%;
+    }
+
+    .contact_form {
+        width: 55%;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .contact_line {
+        width: 75%;
+    }
+
+    .contact_form {
+        width: 75%;
+    }
+
+    .contact_h2 {
+        font-size: 3.3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact_h2 {
+        font-size: 2.5rem;
+    }
+}
+
+
+@media (max-width: 362px) {
+    .contact_h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+// ! Nav and more 
+
+@media (max-width: 744px) {
+    .hero__inner {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .hero__left_h2 {
+        text-align: center;
+        width: 90%;
+    }
+
+    .hero__left_desc {
+        text-align: center;
+    }
+
+    .hero__left {
+        width: 100%;
+        align-items: center;
+    }
+
+    .hero__right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header__links {
+        display: none;
+    }
+
+    .bi-list {
+        display: inline-block;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .hero__left_btn {
+        width: 68%;
+    }
+}
+
+@media (max-width: 556px) {
+    .header__mobile {
+        width: 70%;
+    }
+}
+
+@media (max-width: 377px) {
+    .mobile__list > li a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 283px) {
+    .header__mobile {
+        width: 100%;
+    }
+
+    .mobile__list > li a {
+        font-size: 1.2rem;
+    }
+}

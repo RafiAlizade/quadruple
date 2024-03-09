@@ -1,0 +1,124 @@
+.purple {
+    color: #8d75f7;
+}
+
+.blue {
+    color: rgb(55, 146, 196);
+}
+
+.green {
+    color: rgb(55, 196, 102);
+}
+
+.yellow {
+    color: rgb(201, 171, 36);
+}
+
+.blue-bg {
+    background-color: rgb(55, 146, 196);
+}
+
+.blue-border {
+    box-shadow: rgba(55, 146, 196, 0.4) 0px 1px 4px;
+}
+
+.blue_href:hover {
+    background-color: rgb(55, 146, 196);
+    transition: ease-in-out .4s;
+}
+
+.yellow-bg {
+    background-color: rgb(201, 171, 36);
+}
+
+.yellow_href:hover {
+    background-color: rgb(201, 171, 36);
+    transition: ease-in-out .4s;
+}
+
+.yellow-border {
+    box-shadow: rgba(201, 171, 36, 0.4) 0px 1px 4px;
+}
+
+.purple-bg {
+    background-color: rgb(141, 117, 247);
+}
+
+.purple_href:hover {
+    background-color: rgb(141, 117, 247);
+    transition: ease-in-out .4s;
+}
+
+.purple-border {
+    box-shadow: rgba(141, 117, 247, 0.4) 0px 1px 4px;
+}
+
+.green-bg {
+    background-color: rgb(55, 196, 102);
+}
+
+.green_href:hover {
+    background-color: rgb(55, 196, 102);
+    transition: ease-in-out .4s;
+}
+
+.green-border {
+    box-shadow: rgba(55,196,102, 0.4) 0px 1px 4px;
+}
+
+
+.j-start {
+    justify-content: start;
+}
+
+.j-end {
+    justify-content: end;
+}
+
+.photogallery__inner {
+    width: 100%;
+    padding-top: 6rem;
+    padding-bottom: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.gallery__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 9%;
+    row-gap: 2.5rem;
+}
+
+.gallery__box {
+    width: 27%;
+    background-color: rgba(29, 29, 29, 0.162);
+    border: 1px solid rgba(29, 29, 29, 0.362);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.3rem;
+    padding: 1rem;
+}
+
+.gallery__name {
+    font-family: "Anta", sans-serif;
+    color: #cfcfcf;
+}
+
+.gallery__image {
+    width: 100%;
+
+    > img {
+        width: 100%;
+    }
+}
+
+.gallery__box:hover {
+    transform: scale(1.1);
+    transition: ease-in-out .3s;
+}

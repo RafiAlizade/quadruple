@@ -275,6 +275,7 @@ body {
 }
 
 .gallery__box {
+  transition: ease-in-out 0.4s;
   width: 27%;
   background-color: rgba(29, 29, 29, 0.162);
   border: 1px solid rgba(29, 29, 29, 0.362);
@@ -288,6 +289,7 @@ body {
 .gallery__name {
   font-family: "Anta", sans-serif;
   color: #cfcfcf;
+  transition: ease-in-out 0.4s;
 }
 
 .gallery__image {
@@ -299,7 +301,12 @@ body {
 
 .gallery__box:hover {
   transform: scale(1.1);
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.4s;
+  border: 2px solid rgba(117, 86, 255, 0.2941176471);
+}
+.gallery__box:hover > .gallery__name {
+  color: #7456FF;
+  transition: ease-in-out 0.4s;
 }
 
 .footer__inner {

@@ -95,6 +95,7 @@
 }
 
 .gallery__box {
+    transition: ease-in-out .4s;
     width: 27%;
     background-color: rgba(29, 29, 29, 0.162);
     border: 1px solid rgba(29, 29, 29, 0.362);
@@ -108,6 +109,8 @@
 .gallery__name {
     font-family: "Anta", sans-serif;
     color: #cfcfcf;
+    transition: ease-in-out .4s;
+
 }
 
 .gallery__image {
@@ -120,5 +123,10 @@
 
 .gallery__box:hover {
     transform: scale(1.1);
-    transition: ease-in-out .3s;
+    transition: ease-in-out .4s;
+    border: 2px solid #7556ff4b;
+    > .gallery__name {
+        color: #7456FF;
+    transition: ease-in-out .4s;
+    }
 }

@@ -87,7 +87,6 @@ body {
   font-weight: 500;
   font-size: 2rem;
   border-bottom: 1px solid #cfcfcf;
-  transition: ease-in 0.3s;
 }
 .mobile__list > li a:hover {
   color: #7456FF;
@@ -132,7 +131,7 @@ body {
   color: #cfcfcf;
   font-weight: 500;
   text-align: center;
-  transition: ease-in 0.3s;
+  transition: ease-in-out 0.3s;
 }
 .header__links > li a:hover {
   color: #7456FF;
@@ -162,6 +161,57 @@ body {
   text-decoration: none;
 }
 
+.saf2023_anchor {
+  position: relative;
+}
+
+.header__saf_menu {
+  border-radius: 0.2rem;
+  background-color: rgba(8, 8, 8, 0.85);
+  border: 1px solid rgba(29, 29, 29, 0.36);
+  position: absolute;
+  display: none;
+  margin-top: 0.7rem;
+  animation-duration: 1s;
+}
+
+.saf_menu_ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+  padding: 1rem 7rem 1rem 1.25rem;
+}
+.saf_menu_ul > li a {
+  text-decoration: none;
+  font-family: "Clash Display", sans-serif;
+  color: #cfcfcf;
+  font-weight: 500;
+  text-align: center;
+  transition: ease-in-out 0.3s;
+}
+.saf_menu_ul > li a:hover {
+  color: #7456FF;
+  transition: ease-in-out 0.3s;
+  font-size: 1.1rem;
+}
+
+@keyframes opacityAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes opacityAnimReverse {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @keyframes animationNav {
   0% {
     transform: translate(-100%);

@@ -1,41 +1,29 @@
-@media (max-width: 1200px) {
-    .contact_line {
-        width: 55%;
-    }
-
-    .contact_form {
-        width: 55%;
-    }
-}
-
-
-@media (max-width: 900px) {
-    .contact_line {
-        width: 75%;
-    }
-
-    .contact_form {
-        width: 75%;
-    }
-
-    .contact_h2 {
-        font-size: 3.3rem;
+@media (max-width: 1050px) {
+    .gallery__box {
+        width: 44%;
     }
 }
 
 @media (max-width: 600px) {
-    .contact_h2 {
-        font-size: 2.5rem;
+    .gallery__box {
+        width: 88%;
+    }
+
+    .gallery__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery_h2 {
+        font-size: 3rem;
     }
 }
 
-
-@media (max-width: 362px) {
-    .contact_h2 {
-        font-size: 1.5rem;
+@media (max-width: 331px) {
+    .gallery_h2 {
+        font-size: 2rem;
     }
 }
-
 
 // ! Nav and more 
 

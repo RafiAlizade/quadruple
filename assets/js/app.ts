@@ -1,13 +1,18 @@
 const toggleMobile = document.querySelector('.toggle-mobile') as HTMLElement | null,
-      headerMobile = document.querySelector('.header__mobile') as HTMLDivElement | null,
-      closeButton = document.querySelector('.mobile__close') as HTMLSpanElement | null,
-      galleryContainer = document.querySelector('.gallery__container') as HTMLDivElement | null;
+    headerMobile = document.querySelector('.header__mobile') as HTMLDivElement | null,
+    closeButton = document.querySelector('.mobile__close') as HTMLSpanElement | null,
+    galleryContainer = document.querySelector('.gallery__container') as HTMLDivElement | null;
 
-      toggleMobile?.addEventListener('click', function() {
+
+const submenuSAF = document.querySelector('.saf2023_anchor') as HTMLAnchorElement | null;
+const submenuContainer = document.querySelector('.header__saf_menu') as HTMLDivElement | null;
+
+
+toggleMobile?.addEventListener('click', function () {
     headerMobile?.classList.toggle('d-none');
 });
 
-closeButton?.addEventListener('click', function() {
+closeButton?.addEventListener('click', function () {
     headerMobile?.classList.toggle('d-none');
 });
 
@@ -26,7 +31,7 @@ async function fetchPhotoData() {
 }
 
 async function loadPhotoGallery() {
-    let fetchedData:PhotoData[] = await fetchPhotoData();
+    let fetchedData: PhotoData[] = await fetchPhotoData();
 
     fetchedData.forEach(datas => {
         const HTMLCode = `
@@ -40,9 +45,25 @@ async function loadPhotoGallery() {
                             </div>
                         </div>`
 
-         galleryContainer?.insertAdjacentHTML('beforeend', HTMLCode)
+        galleryContainer?.insertAdjacentHTML('beforeend', HTMLCode)
     })
-}
+};
 
 
 loadPhotoGallery();
+
+submenuSAF?.addEventListener('click', function () {
+    if (submenuContainer) { 
+        if (submenuContainer.style.display === 'block' && submenuContainer.style.animationName !== 'opacityAnimReverse') {
+            submenuContainer.style.animationName = 'opacityAnimReverse';
+            setTimeout(() => {
+                if (submenuContainer) { // Güvenlik kontrolü
+                    submenuContainer.style.display = 'none';
+                }
+            }, 400); 
+        } else {
+            submenuContainer.style.display = 'block';
+            submenuContainer.style.animationName = 'opacityAnim';
+        }
+    }
+});

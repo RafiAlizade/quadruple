@@ -110,7 +110,6 @@
     font-family: "Anta", sans-serif;
     color: #cfcfcf;
     transition: ease-in-out .4s;
-
 }
 
 .gallery__image {
@@ -129,4 +128,25 @@
         color: #7456FF;
     transition: ease-in-out .4s;
     }
+}
+
+.photogallery_top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.gallery_line {
+    width: 40%;
+    background-color: #464646;
+    height: 0.1rem;
+}
+
+.gallery_h2 {
+    text-align: center;
+    font-family: "Anta", sans-serif;
+    color: #cfcfcf;
+    font-size: 4rem;
 }

@@ -37,6 +37,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var toggleMobile = document.querySelector('.toggle-mobile'), headerMobile = document.querySelector('.header__mobile'), closeButton = document.querySelector('.mobile__close'), galleryContainer = document.querySelector('.gallery__container');
 var submenuSAF = document.querySelector('.saf2023_anchor');
 var submenuContainer = document.querySelector('.header__saf_menu');
+var contactBtn = document.querySelector('.hero__left_contact');
 toggleMobile === null || toggleMobile === void 0 ? void 0 : toggleMobile.addEventListener('click', function () {
     headerMobile === null || headerMobile === void 0 ? void 0 : headerMobile.classList.toggle('d-none');
 });
@@ -93,4 +94,9 @@ submenuSAF === null || submenuSAF === void 0 ? void 0 : submenuSAF.addEventListe
             submenuContainer.style.animationName = 'opacityAnim';
         }
     }
+});
+contactBtn === null || contactBtn === void 0 ? void 0 : contactBtn.addEventListener('click', function () {
+    setTimeout(function () {
+        document.location.href = './contact_us.html';
+    }, 300);
 });

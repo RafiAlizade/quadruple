@@ -4,8 +4,9 @@ const toggleMobile = document.querySelector('.toggle-mobile') as HTMLElement | n
     galleryContainer = document.querySelector('.gallery__container') as HTMLDivElement | null;
 
 
-const submenuSAF = document.querySelector('.saf2023_anchor') as HTMLAnchorElement | null;
-const submenuContainer = document.querySelector('.header__saf_menu') as HTMLDivElement | null;
+let submenuSAF = document.querySelector('.saf2023_anchor') as HTMLAnchorElement | null;
+let submenuContainer = document.querySelector('.header__saf_menu') as HTMLDivElement | null;
+let contactBtn = document.querySelector('.hero__left_contact') as HTMLButtonElement | null;
 
 
 toggleMobile?.addEventListener('click', function () {
@@ -67,3 +68,9 @@ submenuSAF?.addEventListener('click', function () {
         }
     }
 });
+
+contactBtn?.addEventListener('click', function() {
+   setTimeout(() => {
+    document.location.href = './contact_us.html'
+   }, 300)
+})

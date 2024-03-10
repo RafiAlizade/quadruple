@@ -37,8 +37,6 @@
 }
 
 
-// ! Nav and more 
-
 @media (max-width: 744px) {
     .hero__inner {
         flex-direction: column-reverse;
@@ -83,7 +81,7 @@
 
 @media (max-width: 556px) {
     .header__mobile {
-        width: 70%;
+        width: 77%;
     }
 }
 
@@ -100,5 +98,12 @@
 
     .mobile__list > li a {
         font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 202px) {
+    .header__top {
+        flex-direction: column-reverse;
+        gap: 1.3rem;
     }
 }

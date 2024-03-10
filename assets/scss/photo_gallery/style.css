@@ -483,7 +483,7 @@ body {
 }
 @media (max-width: 556px) {
   .header__mobile {
-    width: 70%;
+    width: 77%;
   }
 }
 @media (max-width: 377px) {
@@ -497,5 +497,11 @@ body {
   }
   .mobile__list > li a {
     font-size: 1.2rem;
+  }
+}
+@media (max-width: 202px) {
+  .header__top {
+    flex-direction: column-reverse;
+    gap: 1.3rem;
   }
 }/*# sourceMappingURL=style.css.map */

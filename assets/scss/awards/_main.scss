@@ -1,0 +1,233 @@
+.purple {
+    color: #7456FF;
+}
+
+.blue {
+    color: rgb(55, 146, 196);
+}
+
+.green {
+    color: rgb(55, 196, 102);
+}
+
+.yellow {
+    color: rgb(201, 171, 36);
+}
+
+.blue-bg {
+    background-color: rgb(55, 146, 196);
+}
+
+.blue-border {
+    box-shadow: rgba(55, 146, 196, 0.4) 0px 1px 4px;
+}
+
+.blue_href:hover {
+    background-color: rgb(55, 146, 196);
+    transition: ease-in-out .4s;
+}
+
+.yellow-bg {
+    background-color: rgb(201, 171, 36);
+}
+
+.yellow_href:hover {
+    background-color: rgb(201, 171, 36);
+    transition: ease-in-out .4s;
+}
+
+.yellow-border {
+    box-shadow: rgba(201, 171, 36, 0.4) 0px 1px 4px;
+}
+
+.purple-bg {
+    background-color: rgb(141, 117, 247);
+}
+
+.purple_href:hover {
+    background-color: rgb(141, 117, 247);
+    transition: ease-in-out .4s;
+}
+
+.purple-border {
+    box-shadow: rgba(141, 117, 247, 0.4) 0px 1px 4px;
+}
+
+.green-bg {
+    background-color: rgb(55, 196, 102);
+}
+
+.green_href:hover {
+    background-color: rgb(55, 196, 102);
+    transition: ease-in-out .4s;
+}
+
+.green-border {
+    box-shadow: rgba(55,196,102, 0.4) 0px 1px 4px;
+}
+
+
+.j-start {
+    justify-content: start;
+}
+
+.j-end {
+    justify-content: end;
+}
+
+.hero__inner {
+    width: 100%;
+    padding-top: 6rem;
+    padding-bottom: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+}
+
+.hero_top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.awards_line {
+    width: 40%;
+    background-color: #464646;
+    height: 0.1rem;
+}
+
+.awards_h2 {
+    text-align: center;
+    font-family: "Anta", sans-serif;
+    color: #cfcfcf;
+    font-size: 4rem;
+}
+
+.hero__bottom {
+    width: 100%;
+}
+
+.awards__left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.3rem;
+    width: 50%;
+}
+
+.awards__right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: .6rem;
+}
+
+.awards__name {
+    font-family: "Clash Display", sans-serif;
+    color: #cfcfcf;
+    font-size: 1.1rem;
+    font-weight: 400;
+    transition: ease-in-out .4s;
+    text-align: center;
+}
+
+.awards__img {
+    width: 70%;
+
+    > img {
+        width: 100%;
+    }
+}
+
+.awards__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+}
+
+.awards__box {
+    width: 100%;
+    background-color: rgba(29, 29, 29, 0.162);
+    border: 1px solid rgba(29, 29, 29, 0.362);
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding: 1.5rem;
+    transition: ease-in-out .4s;
+    gap: 1.3rem;
+}
+
+.awards__box:hover {
+    transform: scale(1.04);
+    transition: ease-in-out .4s;
+    border: 2px solid #7556ff4b;
+    > .awards__name {
+        color: #7456FF;
+    transition: ease-in-out .4s;
+    }
+}
+
+
+.awards__header {
+    color: #7456FF;
+    font-family: "Clash Display", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    border: 1px solid rgba(29, 29, 29, 0.562);
+    padding: .4rem;
+    border-radius: .3rem;
+    text-align: center;
+}
+
+.awards__description {
+    color: #e9e9e9;
+    font-family: "Clash Display", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    border: 1px solid rgba(29, 29, 29, 0.562);
+    padding: .6rem;
+    border-radius: .3rem;
+}
+
+.awards__place {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex-direction: row;
+    color: #e9e9e9;
+    font-family: "Clash Display", sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    border: 1px solid rgba(29, 29, 29, 0.562);
+    padding: .5rem 3rem;
+    border-radius: .3rem;
+}
+
+.awards__date {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    flex-direction: row;
+    color: #e9e9e9;
+    font-family: "Clash Display", sans-serif;
+    font-weight: 300;
+    font-size: .9rem;
+    border: 1px solid rgba(29, 29, 29, 0.562);
+    padding: .5rem 3rem;
+    border-radius: .3rem;
+}
+
+.awars__date_place {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 0.7rem;
+}

@@ -35,21 +35,20 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var toggleMobile = document.querySelector('.toggle-mobile'), headerMobile = document.querySelector('.header__mobile'), closeButton = document.querySelector('.mobile__close'), galleryContainer = document.querySelector('.gallery__container');
-var submenuSAF = document.querySelector('.saf2023_anchor');
-var submenuContainer = document.querySelector('.header__saf_menu');
 var contactBtn = document.querySelector('.hero__left_contact');
+var awardContainer = document.querySelector('.awards__container');
 toggleMobile === null || toggleMobile === void 0 ? void 0 : toggleMobile.addEventListener('click', function () {
     headerMobile === null || headerMobile === void 0 ? void 0 : headerMobile.classList.toggle('d-none');
 });
 closeButton === null || closeButton === void 0 ? void 0 : closeButton.addEventListener('click', function () {
     headerMobile === null || headerMobile === void 0 ? void 0 : headerMobile.classList.toggle('d-none');
 });
-function fetchPhotoData() {
+function fetchGalleryData() {
     return __awaiter(this, void 0, void 0, function () {
         var fetchAddress, response;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, fetch('./assets/js/database.json')];
+                case 0: return [4 /*yield*/, fetch('./assets/js/gallery.json')];
                 case 1:
                     fetchAddress = _a.sent();
                     return [4 /*yield*/, fetchAddress.json()];
@@ -60,12 +59,47 @@ function fetchPhotoData() {
         });
     });
 }
-function loadPhotoGallery() {
+function fetchAwardData() {
+    return __awaiter(this, void 0, void 0, function () {
+        var fetchAddress, response;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, fetch('./assets/js/awards.json')];
+                case 1:
+                    fetchAddress = _a.sent();
+                    return [4 /*yield*/, fetchAddress.json()];
+                case 2:
+                    response = _a.sent();
+                    return [2 /*return*/, response];
+            }
+        });
+    });
+}
+function loadAwards() {
     return __awaiter(this, void 0, void 0, function () {
         var fetchedData;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, fetchPhotoData()];
+                case 0: return [4 /*yield*/, fetchAwardData()];
+                case 1:
+                    fetchedData = _a.sent();
+                    fetchedData.forEach(function (datas) {
+                        var HTMLCode = "<div class=\"awards__box\" id=\"".concat(datas.id, "\">\n                                <div class=\"awards__left\">\n                                    <h5 class=\"awards__name\">\n                                        ").concat(datas.name, "\n                                    </h5>\n    \n                                    <div class=\"awards__img\">\n                                        <img src=\"").concat(datas.photourl, "\" alt=\"\">\n                                    </div>\n                                </div>\n    \n                                <div class=\"awards__right\">\n                                    <span class=\"awards__header\">\n                                        ").concat(datas.awardName, "\n                                    </span>\n    \n                                    <span class=\"awards__description\">\n                                        ").concat(datas.awardDescription, "\n                                    </span>\n    \n                                    <div class=\"awars__date_place\">\n                                        <span class=\"awards__date\">\n                                            <i class=\"bi bi-calendar\"></i>\n                                            <span>").concat(datas.awardDate, "</span>\n                                        </span>\n    \n                                        <span class=\"awards__place\">\n                                            <i class=\"bi bi-award\"></i>\n                                            <span>").concat(datas.awardPlace, "st Place</span>\n                                        </span>\n                                    </div>\n                                </div>\n                            </div>");
+                        awardContainer === null || awardContainer === void 0 ? void 0 : awardContainer.insertAdjacentHTML('beforeend', HTMLCode);
+                    });
+                    return [2 /*return*/];
+            }
+        });
+    });
+}
+;
+loadAwards();
+function loadGallery() {
+    return __awaiter(this, void 0, void 0, function () {
+        var fetchedData;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, fetchGalleryData()];
                 case 1:
                     fetchedData = _a.sent();
                     fetchedData.forEach(function (datas) {
@@ -78,23 +112,7 @@ function loadPhotoGallery() {
     });
 }
 ;
-loadPhotoGallery();
-submenuSAF === null || submenuSAF === void 0 ? void 0 : submenuSAF.addEventListener('click', function () {
-    if (submenuContainer) {
-        if (submenuContainer.style.display === 'block' && submenuContainer.style.animationName !== 'opacityAnimReverse') {
-            submenuContainer.style.animationName = 'opacityAnimReverse';
-            setTimeout(function () {
-                if (submenuContainer) { // Güvenlik kontrolü
-                    submenuContainer.style.display = 'none';
-                }
-            }, 400);
-        }
-        else {
-            submenuContainer.style.display = 'block';
-            submenuContainer.style.animationName = 'opacityAnim';
-        }
-    }
-});
+loadGallery();
 contactBtn === null || contactBtn === void 0 ? void 0 : contactBtn.addEventListener('click', function () {
     setTimeout(function () {
         document.location.href = './contact_us.html';

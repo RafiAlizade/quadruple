@@ -117,6 +117,7 @@ body {
   font-family: "Clash Display", sans-serif;
   font-size: 1.5rem;
   color: #cfcfcf;
+  transition: ease-in-out 0.2s;
 }
 
 .header__links {
@@ -194,6 +195,11 @@ body {
   color: #7456FF;
   transition: ease-in-out 0.3s;
   font-size: 1.1rem;
+}
+
+.header__h1:hover {
+  color: #7456FF;
+  transition: ease-in-out 0.2s;
 }
 
 @keyframes opacityAnim {
@@ -598,11 +604,13 @@ body {
   font-weight: 500;
   text-align: center;
   text-decoration: none;
+  transition: ease-in-out 0.3s;
 }
 .footer__links > li a:hover {
   color: #7456FF;
   transition: ease-in-out 0.3s;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-family: "Clash Display", sans-serif;
 }
 
 .header__copyright {
@@ -772,6 +780,34 @@ body {
   }
 }
 @media (max-width: 744px) {
+  .hero__inner {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 4rem;
+  }
+  .hero__left_h2 {
+    text-align: center;
+    width: 90%;
+  }
+  .hero__left_desc {
+    text-align: center;
+  }
+  .hero__left {
+    width: 100%;
+    align-items: center;
+  }
+  .hero__right {
+    width: 100%;
+    justify-content: center;
+  }
+  .header__links {
+    display: none;
+  }
+  .bi-list {
+    display: inline-block;
+  }
+}
+@media (max-width: 911px) {
   .hero__inner {
     flex-direction: column-reverse;
     align-items: center;

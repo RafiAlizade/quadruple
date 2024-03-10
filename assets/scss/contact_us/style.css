@@ -117,6 +117,7 @@ body {
   font-family: "Clash Display", sans-serif;
   font-size: 1.5rem;
   color: #cfcfcf;
+  transition: ease-in-out 0.2s;
 }
 
 .header__links {
@@ -194,6 +195,11 @@ body {
   color: #7456FF;
   transition: ease-in-out 0.3s;
   font-size: 1.1rem;
+}
+
+.header__h1:hover {
+  color: #7456FF;
+  transition: ease-in-out 0.2s;
 }
 
 @keyframes opacityAnim {
@@ -425,11 +431,13 @@ body {
   font-weight: 500;
   text-align: center;
   text-decoration: none;
+  transition: ease-in-out 0.3s;
 }
 .footer__links > li a:hover {
   color: #7456FF;
   transition: ease-in-out 0.3s;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-family: "Clash Display", sans-serif;
 }
 
 .header__copyright {
@@ -470,9 +478,9 @@ body {
     font-size: 1.5rem;
   }
 }
-@media (max-width: 744px) {
+@media (max-width: 911px) {
   .hero__inner {
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     gap: 4rem;
   }
@@ -496,6 +504,35 @@ body {
   }
   .bi-list {
     display: inline-block;
+  }
+}
+@media (max-width: 360px) {
+  .hero__left_btn {
+    width: 68%;
+  }
+}
+@media (max-width: 556px) {
+  .header__mobile {
+    width: 77%;
+  }
+}
+@media (max-width: 377px) {
+  .mobile__list > li a {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 283px) {
+  .header__mobile {
+    width: 100%;
+  }
+  .mobile__list > li a {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 202px) {
+  .header__top {
+    flex-direction: column-reverse;
+    gap: 1.3rem;
   }
 }
 @media (max-width: 360px) {

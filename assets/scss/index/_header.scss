@@ -67,6 +67,7 @@
     font-family: 'Clash Display', sans-serif;
     font-size: 1.5rem;
     color: #cfcfcf;
+    transition: ease-in-out .2s;
 }
 
 .header__links {
@@ -148,6 +149,11 @@
             font-size: 1.1rem;
         }
     }
+}
+
+.header__h1:hover {
+    color: #7456FF;
+    transition: ease-in-out .2s;
 }
 
 @keyframes opacityAnim {

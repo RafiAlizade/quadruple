@@ -118,3 +118,5 @@ contactBtn === null || contactBtn === void 0 ? void 0 : contactBtn.addEventListe
         document.location.href = './contact_us.html';
     }, 300);
 });
+
+

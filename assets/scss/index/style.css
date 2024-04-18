@@ -64,7 +64,7 @@ body {
   height: 100vh;
   background-color: #111111;
   animation-name: animationNav;
-  animation-duration: 1.7s;
+  animation-duration: 0.8s;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -96,7 +96,7 @@ body {
 
 .d-none {
   animation-name: animationNavReverse;
-  animation-duration: 1.7s;
+  animation-duration: 0.8s;
   display: none;
 }
 

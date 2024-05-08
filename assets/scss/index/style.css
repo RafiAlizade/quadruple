@@ -622,6 +622,25 @@ body {
   margin-top: 3rem;
 }
 
+.footer__media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.1rem;
+}
+.footer__media > a {
+  text-decoration: none;
+  color: #cfcfcf;
+  transition: 0.2s ease-in;
+  font-size: 1rem;
+}
+.footer__media > a:hover {
+  color: #7456FF;
+  transition: 0.2s ease-in;
+  font-size: 1.2rem;
+}
+
 @media (max-width: 1536px) {
   .member__container {
     width: 70%;

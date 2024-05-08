@@ -45,3 +45,24 @@
         font-size: 1rem;
         margin-top: 3rem;
 }
+
+.footer__media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.1rem;
+
+    > a {
+        text-decoration: none;
+        color: #cfcfcf;
+        transition: .2s ease-in;
+        font-size: 1rem;
+
+        &:hover {
+            color: #7456FF;
+            transition: .2s ease-in;
+            font-size: 1.2rem;
+        }
+    }
+}
